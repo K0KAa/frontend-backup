@@ -1,0 +1,83 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.hero h2{
+    text-decoration: none;
+}
+
+/*
+html{
+    font-size:62.5%;
+}
+body ,html{
+    height:100%;
+}
+
+.container{
+    background: rgb(140,90,140);
+    width:80%;
+    height:200%;
+    margin:auto;
+}
+
+.box1,
+.box2,
+.box3,
+.box3{
+    background: greenyellow;
+    width:20%;
+    height:20%;
+    
+}
+.box2{
+    background: lightseagreen;
+    position: relative;
+}
+.box3{
+    background: rgb(77, 77, 47);
+    position:fixed;
+}
+
+.box1{
+    position:absolute;
+    top:0%;
+    right:0%;
+    position:sticky;
+}
+
+*/
+
+/*box type of layouting
+html{
+    font-size:62.5%;
+}
+
+.box1,
+.box2,
+.box3{
+    width:48%rem;
+    height:30rem;
+    border:2px solid black;
+    margin:0.5%;
+    font-size: 2.5rem;
+}
+.box1{
+    float: left;
+}
+
+.box2{
+    float: right;
+}
+
+.clear{
+    clear:both;
+}
+
+.box3{
+    width: 100%;
+}
+*/

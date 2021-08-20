@@ -1,0 +1,227 @@
+* {
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: "Oswald", sans-serif;
+    background-color: #301f30;
+    max-width: 100vh;
+}
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+
+/*search box css*/
+
+.search-box {
+    background: #230629;
+    border-radius: 90px;
+    height: 60px;
+    padding: 0px;
+}
+
+.search-btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 4px;
+}
+
+.search-box:hover>.search-btn {
+    background: white;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 5px;
+    color: rgb(219, 214, 214);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 35px;
+    width: 0px;
+}
+
+.Nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.Nav-links li {
+    list-style: none;
+}
+
+.Nav-links a {
+    color: rgb(214, 205, 205);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 24px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 1400px) {
+    .Nav-links {
+        border-radius: 6px;
+        margin: -20px;
+        position: absolute;
+        right: 30px;
+        height: 42vh;
+        top: 17vh;
+        background-color: #3a2b3a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .Nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    @media screen and (max-width: 1010px) {
+        .Nav-links {
+            width: 25%;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .Nav-links {
+            height: 40vh;
+            width: 35%;
+        }
+    }
+}
+
+.Nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinksFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.Nav-NotActive {
+    transform: translateX(50%);
+}
+
+@keyframes navLinksFadeBack {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.content {
+    background-color: lightgoldenrodyellow;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    list-style: none;
+    border-radius: 3px;
+}
+
+.flex-container {
+    margin: -5px;
+    padding: 5px;
+    background-color: #9fa8b6;
+    border-radius: 5px;
+    height: 1500vh;
+    font-family: "Oswald", sans-serif;
+    max-width: 1400px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #c9bdba;
+    height: 55vh;
+    padding: 10px;
+    width: 20rem;
+}
+
+.card img {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0;
+    height: 250px;
+    border-radius: 3px;
+}
+
+.card-body {
+    background-color: #f0e2f0;
+    border-radius: 3px;
+}
+
+.container {
+    background-color: #c5c9d1;
+    padding: 5px;
+    height: 100vh;
+}

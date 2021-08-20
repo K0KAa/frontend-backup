@@ -1,0 +1,26 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(214, 238, 247);
+    position:relative;
+}
+
+#header{
+    padding: 10px ;
+    height:80px;
+    background: lightcoral;
+    display:flex;
+    justify-content: space-around;
+}
+
+.nav-list{
+    justify-content: space-between;
+    flex-direction: column;
+    background: darkcyan;
+    height: 300px;
+    position:relative;
+    
+}
